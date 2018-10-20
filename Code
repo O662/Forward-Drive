@@ -1,6 +1,12 @@
-task main()
-{
-	motor[rightMotor] = 63;  
-	motor[leftMotor] = 63; 
-	wait1Msec(5000);
-}
+task main()                          //The 'task main' is "start" for the code, much like a race, where you need a place to start, this 
+                                     //is where the code begins to run.
+{                                    //a opening bracket is is what the cose reads,like in our race example earlier, this is the starting 
+                                     //gun
+	motor[rightMotor] = 63;      //the 'motor[rightMotor]' call upon the motor and the'[rightMotor]' tells the code which motor
+	motor[leftMotor] = 63;       //the same for the right motor is the same for the left.
+	wait1Msec(5000);             //the time is basically a loop, what ever is above the command is repeted until the time that is set 
+	                             // is up
+}                                    //the ending bracket is also very important, because with out it your code is undefined and will 
+                                     //continue forever
+
+// This is just an example, you are free to change the numbers.
